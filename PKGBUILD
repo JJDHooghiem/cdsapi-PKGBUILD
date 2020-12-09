@@ -1,12 +1,13 @@
 pkgname=python-cdsapi
-pkgver=0.3.1
+pkgver=0.4.0
 pkgrel=1
 pkgdesc="cdsapi"
 arch=(any)
 license=('APACHE')
+depends=('python-tqdm')
 makedepends=('python-setuptools')
-source=("https://files.pythonhosted.org/packages/74/ee/0d0d26dfad17f948bb7ef377972bc67db29870d710d4f5513b13d5614b12/cdsapi-$pkgver.tar.gz")
-sha256sums=('3d80f21c7decf923c0a18b42f30a36a16221787412381322485e8a185f7c9404')
+source=("https://files.pythonhosted.org/packages/d6/9e/952b99737b2dfc56229306abdd8f353b9114480db29e379ad2a621b12e6b/cdsapi-0.4.0.tar.gz")
+sha256sums=('e2fc7c06c18810b2dea38522e4d41470ab91607a155df7de6a6a8bceea90b39d')
 
 build() {
     cd "$srcdir"/cdsapi-$pkgver
